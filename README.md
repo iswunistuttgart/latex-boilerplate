@@ -105,6 +105,10 @@ A file-repository should generally only consist of the files needed to generate 
 
 You will need two things for this automagic to work: a `.gitlab-ci.yml` file (:checkmark: can be found in this project) and a correctly configure GitLab project. The latter really is quite simple - just head over to the [GitLab help pages](https://gitlab.com/help/ci/enable_or_disable_ci.md) and follow the step(s).
 
+The provided `.gitlab-ci.yml` is configured to use a docker image of texlive 2017 which ships the most recent version of LaTeX on an ubuntu system. Besides texlive-2017, `perl`, `ghostscript`, `imagemagick`, and `python-pygments` is installed. Using pgfplots may require having ghostscript available while wanting to add code listings using the *highly recommended* `minted` package requires `python` and `python-pygments`.
+When the GitLab CI is enabled and the `.gitlab-ci.yml` is added to the repo, there is only one job being performed: `compile_pdf`. This job downloads previously mentioned docker image and starts it. Then, the most recent version of the repository is checked out (in the branch you pushed to) and the `latexmk` script is run. Since this picks up the filename to compile from the `.latexmkrc` file, you ought to make sure that your `tex` file is named accordingly. The `tex` file used by `latexmk` ought to be called `source.tex` - but you can also change the corresponding line in either `.latexmkrc-macos` or `.latexmkrc-win`.
+After successful compilation (you should get an email if your compilation failed showing the error) the compiled files (artifacts, as GitLab calls them) are taken from the root directory matching the file extension `*.pdf`. The artifacts name is composed of GitLab's project slug and the commit SHA.
+
 ## Further reading
 
 If you need more information, especially on the provided dot-files, I suggest first looking into the files and then looking at the following list of links:
