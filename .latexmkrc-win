@@ -1,3 +1,5 @@
+# Default file to compile
+@default_files = ('source.tex');
 # Use lualatex
 $pdflatex = 'lualatex --shell-escape -bibtex --synctex=1 %O %S';
 # Always create PDFs
