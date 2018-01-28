@@ -15,8 +15,8 @@ By default, this project gives you the following file and directory structure fo
 * `tables/`
 * `.latexmkrc-win`
 * `.latexmkrc-macos`
-  * `.gitignore`
-  * `.gitlab-ci.yml`
+* `.gitignore`
+* `.gitlab-ci.yml`
 
 Further down, the use of each file/directory will be explained.
 
