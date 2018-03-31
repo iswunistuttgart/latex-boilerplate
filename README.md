@@ -22,6 +22,8 @@ Further down, the use of each file/directory will be explained.
 
 What you should keep in mind is that I like to keep my main tex file as empty as possible. In most cases you will only find some `\input`s or `\include`s inside the main `.tex` file. Every actual content is contained within subdirectories.
 
+Want to read some advices on writing good LaTeX documents? Check out this [advice for writing LaTeX documents](https://github.com/dspinellis/latex-advice)
+
 ## How To
 
 If you want to create a LaTeX document and want to use this boilerplate, simply clone the project and get going:
