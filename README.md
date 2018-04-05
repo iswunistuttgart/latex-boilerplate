@@ -114,3 +114,9 @@ After successful compilation (you should get an email if your compilation failed
 ## Further reading
 
 If you need more information, especially on the provided dot-files, I suggest first looking into the files and then looking at the following list of links:
+
+  * [Typesetting beautiful](http://www.inf.ethz.ch/personal/markusp/teaching/guides/guide-tables.pdf) tables [and another](https://tex.stackexchange.com/questions/112343/beautiful-table-samples)
+  * [Typesetting mathematics for science and technology according to ISO 31-XI](https://www.tug.org/TUGboat/Articles/tb18-1/tb54becc.pdf)
+  * [Is a period after an abbreviation the same as an end of sentence period?](https://tex.stackexchange.com/questions/2229/is-a-period-after-an-abbreviation-the-same-as-an-end-of-sentence-period)
+  * [Making pretty graphs in MATLAB](https://blogs.mathworks.com/loren/2007/12/11/making-pretty-graphs/) and then [exporting these figures nicely](https://de.mathworks.com/matlabcentral/fileexchange/23629-export-fig)
+  * [Export MATLAB figures to TikZ](https://github.com/matlab2tikz/matlab2tikz) (the best way for proper, publication- and camera-ready figures)
