@@ -121,3 +121,4 @@ If you need more information, especially on the provided dot-files, I suggest fi
   * [Making pretty graphs in MATLAB](https://blogs.mathworks.com/loren/2007/12/11/making-pretty-graphs/) and then [exporting these figures nicely](https://de.mathworks.com/matlabcentral/fileexchange/23629-export-fig)
   * [Export MATLAB figures to TikZ](https://github.com/matlab2tikz/matlab2tikz) (the best way for proper, publication- and camera-ready figures)
   * [A comprehensive review of mathematics in (La)TeX](https://ctan.org/pkg/voss-mathmode) (even though obsolete, still worth reading)
+  * [Writing Scientific Documents Using LaTeX](ftp://ftp.dante.de/tex-archive/info/intro-scientific/scidoc.pdf)
