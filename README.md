@@ -122,3 +122,6 @@ If you need more information, especially on the provided dot-files, I suggest fi
   * [Export MATLAB figures to TikZ](https://github.com/matlab2tikz/matlab2tikz) (the best way for proper, publication- and camera-ready figures)
   * [A comprehensive review of mathematics in (La)TeX](https://ctan.org/pkg/voss-mathmode) (even though obsolete, still worth reading)
   * [Writing Scientific Documents Using LaTeX](ftp://ftp.dante.de/tex-archive/info/intro-scientific/scidoc.pdf)
+  * [American Mathematical Society's (amsmath) Short Math Guide for LaTeX](ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf)
+  * [An essential guide to LaTeX2e usage](http://ctan.math.illinois.edu/info/l2tabu/english/l2tabuen.pdf)
+
