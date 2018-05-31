@@ -52,7 +52,7 @@ If you prefer, keep your different configuration files separate i.e., have one f
 
 ### content
 
-As the name suggests, all your content `tex`-files should go in here. This is mostly useful when your document organically grows (like a thesis) and you only want to compile the currently edited text. Putting all your content into the main `tex`-file will be a pain in the long run. Just want to compile your abstract or introduction? Simply comment out the other contents' `\input` and compile it. Simple as that.
+As the name suggests, all your content `tex`-files should go in here. This is mostly useful when your document organically grows (like a thesis) and you only want to compile the currently edited text. Putting all your content into the main `tex`-file will be a pain in the long run. Just want to compile your abstract or introduction? Simply comment out the other contents' `\input` and compile your document. Simple as that.
 
 How you further break down your content (I'd suggest creating files on a `\subsection` level) is up to you. Also, prefixing or suffixing your file with the section number might be your thing - but keep in mind that you might rearrange sections in your document and that would require you to also change the filename of the corresponding `tex` files.
 
@@ -70,7 +70,7 @@ In contrast to figures, images are all documents that can be thought of as being
 
 ### listings
 
-Some documents may also include code listings. These floating environments should be treated much like any other floating environment: separate markup from content. Your markup of a listing goes into the corresponding `tex`-file inside the `content/` directory while the actual content/data goes into the corresponding `tex`-file inside the `listings/` directory.
+Some documents may also include source code listings. These floating environments should be treated much like any other floating environment: separate markup from content. Your markup of a listing goes into the corresponding `tex`-file inside the `content/` directory while the actual content/data goes into the corresponding `tex`-file inside the `listings/` directory.
 
 ### tables
 
@@ -88,7 +88,7 @@ Depending on your OS, you want to copy the respective `.latexmkrc-*` file to `.l
 
 It is very important to exclude the right files when working with a LaTeX document. Since it is quite a repetitive and cumbersome task (even with [gitignore.io](gitignore.io)), we provide a basic gitignore that's geared towards both Windows and UNIX users. If you are a power LaTeX user, you might want to take a look at the `.gitignore` file and see if it works for your or possibly excludes files that you don't want excluded.
 
-The provided `.gitignore` file contains the following ignore definitions
+The provided `.gitignore` file contains the following ignore definitions from [gitignore.io](gitignore.io):
 
 * archives
 * cvs
@@ -107,13 +107,13 @@ A file-repository should generally only consist of the files needed to generate 
 
 You will need two things for this automagic to work: a `.gitlab-ci.yml` file (:checkmark: can be found in this project) and a correctly configure GitLab project. The latter really is quite simple - just head over to the [GitLab help pages](https://gitlab.com/help/ci/enable_or_disable_ci.md) and follow the step(s).
 
-The provided `.gitlab-ci.yml` is configured to use a docker image of texlive 2017 which ships the most recent version of LaTeX on an ubuntu system. Besides texlive-2017, `perl`, `ghostscript`, `imagemagick`, and `python-pygments` is installed. Using pgfplots may require having ghostscript available while wanting to add code listings using the *highly recommended* `minted` package requires `python` and `python-pygments`.
-When the GitLab CI is enabled and the `.gitlab-ci.yml` is added to the repo, there is only one job being performed: `compile_pdf`. This job downloads previously mentioned docker image and starts it. Then, the most recent version of the repository is checked out (in the branch you pushed to) and the `latexmk` script is run. Since this picks up the filename to compile from the `.latexmkrc` file, you ought to make sure that your `tex` file is named accordingly. The `tex` file used by `latexmk` ought to be called `source.tex` - but you can also change the corresponding line in either `.latexmkrc-macos` or `.latexmkrc-win`.
+The provided `.gitlab-ci.yml` is configured to use a docker image of texlive 2018 which ships the most recent version of LaTeX on an ubuntu system. Besides texlive-2018, `perl`, `ghostscript`, `imagemagick`, and `python-pygments` is installed. Using pgfplots may require having ghostscript available while wanting to add code listings using the *highly recommended* `minted` package requires `python` and `python-pygments`.
+When GitLab CI is enabled and the `.gitlab-ci.yml` is added to the repo, there is only one job being performed: `compile_pdf`. This job downloads previously mentioned docker image and starts it. Then, the most recent version of the repository is checked out (in the branch you pushed to) and `latexmk` is executed. Since this picks up the filename to compile from the `.latexmkrc` file, you ought to make sure that your `tex` file is named accordingly. The `tex` file used by `latexmk` ought to be called `source.tex` - but you can also change the corresponding line in either `.latexmkrc-macos` or `.latexmkrc-win`.
 After successful compilation (you should get an email if your compilation failed showing the error) the compiled files (artifacts, as GitLab calls them) are taken from the root directory matching the file extension `*.pdf`. The artifacts name is composed of GitLab's project slug and the commit SHA.
 
 ## Further reading
 
-If you need more information, especially on the provided dot-files, I suggest first looking into the files and then looking at the following list of links:
+If you need more information, especially on the provided dot-files, I suggest first looking into the files and then looking at the following list of links (in no particular order):
 
   * [Typesetting beautiful](http://www.inf.ethz.ch/personal/markusp/teaching/guides/guide-tables.pdf) tables [and another](https://tex.stackexchange.com/questions/112343/beautiful-table-samples)
   * [Typesetting mathematics for science and technology according to ISO 31-XI](https://www.tug.org/TUGboat/Articles/tb18-1/tb54becc.pdf)
@@ -124,4 +124,3 @@ If you need more information, especially on the provided dot-files, I suggest fi
   * [Writing Scientific Documents Using LaTeX](ftp://ftp.dante.de/tex-archive/info/intro-scientific/scidoc.pdf)
   * [American Mathematical Society's (amsmath) Short Math Guide for LaTeX](ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf)
   * [An essential guide to LaTeX2e usage](http://ctan.math.illinois.edu/info/l2tabu/english/l2tabuen.pdf)
-
