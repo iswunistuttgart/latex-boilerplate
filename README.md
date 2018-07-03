@@ -74,7 +74,11 @@ Some documents may also include source code listings. These floating environment
 
 ### tables
 
-Another floating environment in LaTeX are tables. These can be quite long at times and take up space in your actual document. Think of it in the same way as you do for figures/images: you do not copy them into the document but acctualy include the via `\includegraphics{figures/…}`. Why not do this with tables, too? Also, this allows re-using tables in multiple documents as you only need to copy the table data in one single file and won't ever have to skim through your document finding the table.
+Another floating environment in LaTeX are tables. These can be quite long at times and take up space in your actual document. Think of it in the same way as you do for figures/images: you do not copy them into the document but acctualy include these figures via `\includegraphics{figures/…}`. Why not do this with tables, too? Also, this allows re-using tables in multiple documents as you only need to copy the table data in one single file and won't ever have to skim through your document finding the table.
+
+### videos
+
+This folder will most likely only be necessary for presentations typset with LaTeX, however, you may abuse your document PDF to include a video, too. This folder may be used to store videos (sidenote: think about enabling git LFS on your repository and on files in this directoyr — or for that matter for `*.mp4` or other video formats).
 
 ## Files
 
