@@ -124,7 +124,7 @@ If you need more information, especially on the provided dot-files, I suggest fi
   * [Is a period after an abbreviation the same as an end of sentence period?](https://tex.stackexchange.com/questions/2229/is-a-period-after-an-abbreviation-the-same-as-an-end-of-sentence-period)
   * [Making pretty graphs in MATLAB](https://blogs.mathworks.com/loren/2007/12/11/making-pretty-graphs/) and then [exporting these figures nicely](https://de.mathworks.com/matlabcentral/fileexchange/23629-export-fig)
   * [Export MATLAB figures to TikZ](https://github.com/matlab2tikz/matlab2tikz) (the best way for proper, publication- and camera-ready figures)
-  * [A comprehensive review of mathematics in (La)TeX](https://ctan.org/pkg/voss-mathmode) (even though obsolete, still worth reading)
+  * [Mathematical Typesetting with LaTeX](https://www.tug.org/~hvoss/PDF/mathmode.pdf) by Herbert Voß
   * [Writing Scientific Documents Using LaTeX](ftp://ftp.dante.de/tex-archive/info/intro-scientific/scidoc.pdf)
   * [American Mathematical Society's (amsmath) Short Math Guide for LaTeX](ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf)
   * [An essential guide to LaTeX2e usage](http://ctan.math.illinois.edu/info/l2tabu/english/l2tabuen.pdf)
