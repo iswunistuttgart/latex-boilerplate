@@ -6,9 +6,11 @@ It is based on many many years of experience from writing LaTeX files and changi
 
 By default, this project gives you the following file and directory structure for your project
 
+* `algorithms/`
 * `config/`
 * `content/`
 * `data/`
+* `glossaries/`
 * `figures/`
 * `images/`
 * `listings/`
@@ -44,6 +46,12 @@ That's it, now you can start writing your document, keep track of upstream chang
 
 ## directories
 
+### algorithms
+
+You are writing a code-heavy document and want to provide pseudo-code or code excerpts?
+It's always a good idea to keep content in separate files rather than all within your main document.
+This would be the folder for you to keep all algorithm or code snippets in that you may later include using package `minted`, or packages `algorithm` together with `algpseudocode`.
+
 ### config
 
 Use this directory to put any configuration of your document into. Be it additional packages you need to load, configuration of loaded packages like `siunitx`, layout adjustments or macro/environment definitions.
@@ -63,6 +71,13 @@ It is preferable to have graphs (2D or 3D) available as `tikz` files as they wil
 ### figures
 
 You might ask yourself "why is there a `figures/` and an `images/` directory? Isn't everything a figure at its core?" and you are technically right. However, I prefer to think of figures as anything that is a data-based plot or generated from actual text (for my documents, this mostly implies TikZ/pgfplots). Within the `figures/` directory, you can throw everything in at the top level or add additional sublevel directories to split by sections or content.
+
+### glossaries
+
+Any good document requires some glossaries be it acronyms, notation, or a list of symbols used.
+The most powerful package is `glossaries`, yet there's nothing more important than a powerful directory hierarchy.
+I prefer to have my glossaries in a separate directory rather than within my content directory.
+Thus, you may also want to throw all your glossaries into this directory.
 
 ### images
 
