@@ -178,6 +178,12 @@ The `tex` file used by `latexmk` ought to be called `source.tex` - but you can a
 After successful compilation (you should get an email if your compilation failed showing the error) the compiled files (artifacts, as GitLab calls them) are taken from the root directory matching the file extension `*.pdf`.
 The artifacts name is composed of GitLab's project slug and the commit SHA.
 
+
+## Roadmap
+
+[ ] Add support for TikZ/PGF. Not sure how exactly, but maybe at least a simple `externalization` script of some sort
+
+
 ## Further reading
 
 If you need more information, especially on the provided dot-files, I suggest first looking into the files and then looking at the following list of links (in no particular order):
