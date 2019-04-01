@@ -8,6 +8,7 @@ That also implies it may not be the right thing for you if you're a starter, but
 By default, this project gives you the following file and directory structure for your project
 
 * `algorithms/`
+* `appendix/`
 * `config/`
 * `content/`
 * `data/`
@@ -58,12 +59,19 @@ You are writing a code-heavy document and want to provide pseudo-code or code ex
 It's always a good idea to keep content in separate files rather than all within your main document.
 This would be the folder for you to keep all algorithm or code snippets in that you may later include using package `minted`, or packages `algorithm` together with `algpseudocode`.
 
+
+### appendix
+
+As the name suggests, content that is not within your main document but seen as *appended to it* goes into this directory.
+Speaking LaTeX, there's actually no difference if you put your appendix into the main `content/` directory (or `content/appendix/`), but I feel your directory is going to be looking cleaner if you physically have actual content separate from your appendix.
+
+
 ### config
 
 Use this directory to put any configuration of your document into.
 Be it additional packages you need to load, configuration of loaded packages like `siunitx`, layout adjustments or macro/environment definitions.
 
-If you prefer, keep your different configuration files separate i.e., have one for loading packages, one for macro definitions, one for environment definitions, one for loading tikz libraries.
+If you prefer, keep your different configuration files separate i.e., have one for loading packages, one for macro definitions, one for environment definitions, one for loading TikZ libraries.
 You get the idea.
 
 ### content
