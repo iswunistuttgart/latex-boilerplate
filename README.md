@@ -187,6 +187,11 @@ After successful compilation (you should get an email if your compilation failed
 The artifacts name is composed of GitLab's project slug and the commit SHA.
 
 
+## HowTos
+
+* [Typesetting of MATLAB data in LaTeX documents](howtos/matlab-array-typesetting.md)
+
+
 ## Roadmap
 
 [ ] Add support for TikZ/PGF. Not sure how exactly, but maybe at least a simple `externalization` script of some sort
