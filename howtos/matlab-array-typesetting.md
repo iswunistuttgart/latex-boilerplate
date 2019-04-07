@@ -38,7 +38,8 @@ This file contains, at the bare minimum
 
 \end{document}
 ```
-
+Option `col sep=comma` is required since we used `'Delimiter', ','` in our MATLAB export.
+Had we used MATLAB's default delimiter `'\t'` (tabs), then we would not have required to pass this option to `\pgfplotstabletypeset`.
 Now run `latexmk A` or whichever way you prefer to compile your LaTeX documents, and you have the table typeset right away.
 
 If you want column headers, these must of course exist in file `A.dat`; but how to get them there since array `A` does not have column names?
