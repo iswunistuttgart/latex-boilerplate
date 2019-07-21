@@ -103,6 +103,7 @@ It is recommended to keep the same naming convention inside the `data` and `figu
 
 You might ask yourself "why is there a `figures/` and an `images/` directory? Isn't everything a figure at its core?" and you are technically right.
 However, I prefer to think of figures as anything that is a data-based plot or generated from actual text (for my documents, this mostly implies TikZ/pgfplots).
+This directory contains all these `tikzpicture`s.
 Within the `figures/` directory, you can throw everything in at the top level or add additional sublevel directories to split by sections or content.
 
 ### glossaries
@@ -144,7 +145,7 @@ Setting up your LaTeX build environment correctly can be a challenge.
 If you are using any of the known IDEs like TeXmaker, TeXstudio, TeXworks, etc., there's many options to configure.
 These options can be very simple to set in case you are really just writing a plain document.
 However, as soon as you need to add some references/bibliography or want to add complex TikZ/pgfplots, compilation gets more complicated.
-Wouldn't it be cool to just have to run one command and wait for everything to compile as needed? C/C++ for example has some thing called `makefile` that takes care of exactly that, so where's a similar thing for LaTeX? It's inside your `.latexmkrc` file in combination with `latexmk`.
+Wouldn't it be cool to just have to run one command and wait for everything to compile as needed? C/C++, for example, has some thing called `makefile` that takes care of exactly that, so where's a similar thing for LaTeX? It's inside your `.latexmkrc` file in conjunction with `latexmk`.
 If you have a `.latexmkrc` in your project's root directory (and it's configured well), you can simply run `latexmk` inside the project directory from your command window, terminal, git bash, power shell, etc.
 
 Depending on your OS, you want to copy the respective `.latexmkrc-*` file to `.latexmkrc` and start using it.
