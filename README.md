@@ -8,6 +8,7 @@ That also implies it may not be the right thing for you if you're a starter, but
 By default, this project gives you the following file and directory structure for your project
 
 * `algorithms/`
+* `animations/`
 * `appendix/`
 * `config/`
 * `content/`
@@ -58,6 +59,12 @@ How neat is that?
 You are writing a code-heavy document and want to provide pseudo-code or code excerpts?
 It's always a good idea to keep content in separate files rather than all within your main document.
 This would be the folder for you to keep all algorithm or code snippets in that you may later include using package `minted`, or packages `algorithm` together with `algpseudocode`.
+
+### animations
+
+After having found out, how to create animations using the `animate` package that is able to render both TikZ and psplots as animations, I added this directory.
+It is very similar to the `figures/` directory as it is supposed to keep the raw animation files - not their data, this'll belong into `data/`.
+Using the `animations/` directory, you can move your animations into standalone files that contain all logic to render the animation, allowing you to have reusable code.
 
 
 ### appendix
