@@ -1,5 +1,5 @@
 compile_pdf:
-  image: philipptempel/docker-ubuntu-tug-texlive:latest
+  image: philipptempel/docker-ubuntu-tug-texlive:2019
   script:
     - latexmk
   artifacts:

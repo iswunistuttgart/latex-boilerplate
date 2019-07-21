@@ -183,8 +183,8 @@ How neat is that?
 You will need two things for this auto-magic to work: a `.gitlab-ci.yml` file (:checkmark: can be found in this project) and a correctly configure GitLab project.
 The latter really is quite simple - just head over to the [GitLab help pages](https://gitlab.com/help/ci/enable_or_disable_ci.md) and follow the step(s).
 
-The provided `.gitlab-ci.yml` is configured to use a docker image of texlive 2018 which ships the most recent version of LaTeX on an ubuntu system.
-Besides texlive-2018, `perl`, `ghostscript`, `imagemagick`, and `python-pygments` is installed.
+The provided `.gitlab-ci.yml` is configured to use a docker image of texlive 2010 which ships the most recent version of LaTeX on an ubuntu system.
+Besides texlive-2019, `perl`, `ghostscript`, `imagemagick`, and `python-pygments` is installed.
 Using pgfplots may require having ghostscript available while wanting to add code listings using the *highly recommended* `minted` package requires `python` and `python-pygments`.
 When GitLab CI is enabled and the `.gitlab-ci.yml` is added to the repo, there is only one job being performed: `compile_pdf`.
 This job downloads previously mentioned docker image and starts it.
